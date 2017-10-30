@@ -1,0 +1,14 @@
+-App - comp
+ -Page cont
+   -EmployeesListPage - comp
+    -header info - node
+    -Employees - cont
+     -EmployeesList - comp
+       -Employee - comp
+   OR
+   -EmployeeInfoPage - cont
+     -EmployeeInfo - comp
+
+-AddEmployeeModal / EditEmployeeModal - cont
+  -Modal - comp
+    -EmployeeForm - comp

@@ -1,0 +1,29 @@
+@import "globals";
+
+html, body, div#app-root {
+  min-height: 100%;
+}
+
+h1 {
+  @include clear;
+}
+
+body {
+  @include clear;
+
+  font: {
+    family: Verdana, sans-serif;
+    size: 0.9em;
+  }
+
+  div.app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+}
+
+input {
+  outline: none;
+}
