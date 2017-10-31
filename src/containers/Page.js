@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import classNames from 'classnames'
+import PageWrapper from '../components/PageWrapper'
 
 const mapStateToProps = (state)=> (
   {
@@ -9,15 +9,8 @@ const mapStateToProps = (state)=> (
   }
 );
 
-const PageContainer = ({pageName, pageData})=> (
-  <div className={ classNames("page", pageName) }>
-    <h2>{ pageName }</h2>
-    <code>{ JSON.stringify(pageData) }</code>
-  </div>
-);
-
 const Page = connect(
   mapStateToProps
-)(PageContainer);
+)(PageWrapper);
 
 export default Page;

@@ -1,9 +1,8 @@
 -App - comp
   -Page cont
-    -EmployeesListPage - comp
-      -header info - node
-      -Employees - cont
-        -EmployeesList - comp
+    -EmployeesListPage - cont
+      -EmployeesList - comp
+        -Employees - comp
           -Employee - comp
     OR
     -EmployeeInfoPage - cont
