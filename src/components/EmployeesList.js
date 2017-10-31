@@ -14,7 +14,7 @@ const EmployeesList = ({employees, showEmployeeInfo})=> (
 
     <tbody>
       {
-        employees.map((employee) => <Employee {...employee} showEmployeeInfo={showEmployeeInfo}/>)
+        employees.map((employee) => <Employee key={employee.id} {...employee} showEmployeeInfo={showEmployeeInfo}/>)
       }
     </tbody>
   </table>

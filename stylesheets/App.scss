@@ -27,3 +27,8 @@ body {
 input {
   outline: none;
 }
+
+#modal-root {
+  position: relative;
+  z-index: 999;
+}
