@@ -20,7 +20,14 @@ class EmployeeForm extends React.Component {
       return alert("Заполните обязательные поля");
     }
 
-    this.props.handleSubmit(this.state);
+    let args = [];
+    if(this.props.mode === 'edit'){
+      args.push(this.props.id);
+    }
+
+    args.push(this.state);
+
+    this.props.handleSubmit(...args);
   };
 
   handleChange = (e)=> {

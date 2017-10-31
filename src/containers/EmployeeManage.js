@@ -1,11 +1,15 @@
 import {connect} from 'react-redux'
-import {addEmployee} from '../actions'
+import {addEmployee, editEmployee} from '../actions'
 import EmployeeManageModal from '../components/EmployeeManageModal'
 
 const mapDispatchToProps = (dispatch)=> (
   {
     onEmployeeAdd(employeeData){
       dispatch(addEmployee(employeeData))
+    },
+
+    onEmployeeEdit(id, employeeData){
+      dispatch(editEmployee(id, employeeData))
     }
   }
 );

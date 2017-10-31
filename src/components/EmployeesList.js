@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Employee from './Employee'
+import EmployeeRow from './EmployeeRow'
 
 const EmployeesList = ({employees, showEmployeeInfo})=> (
   <table className="employees-list">
@@ -14,7 +14,7 @@ const EmployeesList = ({employees, showEmployeeInfo})=> (
 
     <tbody>
       {
-        employees.map((employee) => <Employee key={employee.id} {...employee} showEmployeeInfo={showEmployeeInfo}/>)
+        employees.map((employee) => <EmployeeRow key={employee.id} {...employee} showEmployeeInfo={showEmployeeInfo}/>)
       }
     </tbody>
   </table>

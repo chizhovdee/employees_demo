@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import EmployeesListPage from '../components/EmployeesListPage'
+import EmployeeInfoPage from '../components/EmployeeInfoPage'
 
 const PageWrapper = ({pageName, pageData})=> {
   let page;
@@ -12,7 +13,7 @@ const PageWrapper = ({pageName, pageData})=> {
       break;
 
     case 'employee_info':
-      page = <div>employee_info</div>;
+      page = <EmployeeInfoPage pageData={pageData}/>;
       break;
 
     default:

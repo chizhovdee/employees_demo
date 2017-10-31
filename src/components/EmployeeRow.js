@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Employee = ({id, firstName, lastName, post, showEmployeeInfo})=>(
+const EmployeeRow = ({id, firstName, lastName, post, showEmployeeInfo})=>(
   <tr className="employee-row" onClick={()=> showEmployeeInfo(id)}>
     <td>{firstName}</td>
     <td>{lastName}</td>
@@ -9,7 +9,7 @@ const Employee = ({id, firstName, lastName, post, showEmployeeInfo})=>(
   </tr>
 );
 
-Employee.propTypes = {
+EmployeeRow.propTypes = {
   id: PropTypes.number.isRequired,
   firstName: PropTypes.string.isRequired,
   lastName: PropTypes.string.isRequired,
@@ -17,5 +17,5 @@ Employee.propTypes = {
   showEmployeeInfo: PropTypes.func.isRequired
 };
 
-export default Employee
+export default EmployeeRow
 
