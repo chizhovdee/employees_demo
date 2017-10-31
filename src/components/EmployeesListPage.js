@@ -1,6 +1,7 @@
 import React from 'react'
 import Employees from '../containers/Employees';
 import EmployeeManage from '../containers/EmployeeManage'
+import '../../stylesheets/EmployeesListPage.scss'
 
 class EmployeesListPage extends React.Component {
   constructor(){
@@ -23,7 +24,7 @@ class EmployeesListPage extends React.Component {
 
   render(){
     return (
-      <div>
+      <div className="employees-list-page">
         <h2>Список сотрудников</h2>
 
         <div className="controls">

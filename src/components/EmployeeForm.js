@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import '../../stylesheets/EmployeeForm.scss'
 
 class EmployeeForm extends React.Component {
   constructor(props){

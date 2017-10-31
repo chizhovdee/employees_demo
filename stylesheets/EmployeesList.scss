@@ -1,0 +1,25 @@
+table.employees-list {
+  width: 60%;
+  margin: 10px;
+
+  tr {
+    cursor: pointer;
+
+    &:nth-child(even) {
+      background-color: #ccc;
+    }
+  }
+
+  th {
+    color: #7f7f7f;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: normal;
+    padding: 5px;
+    text-align: left;
+  }
+
+  td {;
+    padding: 5px;
+  }
+}

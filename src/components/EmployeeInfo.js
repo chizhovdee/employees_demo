@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import EmployeeManage from '../containers/EmployeeManage'
+import '../../stylesheets/EmployeeInfo.scss'
 
 class EmployeeInfo extends React.Component {
   constructor(props){
@@ -23,7 +24,7 @@ class EmployeeInfo extends React.Component {
 
   render(){
     return (
-      <div>
+      <div className="employee-info">
         <h2>Сотрудник {this.props.employee.firstName} {this.props.employee.lastName}</h2>
 
         <div className="controls">

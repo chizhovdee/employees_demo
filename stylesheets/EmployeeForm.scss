@@ -1,0 +1,21 @@
+.employee-form {
+  input {
+    font: 16px Arial;
+  }
+
+  .form-control {
+    padding-left: 20px;
+    text-align: left;
+
+    label {
+      color: #696966;
+      display: block;
+      font-size: 12px;
+      padding: 12px 0 6px;
+    }
+
+    input[type=submit] {
+      margin-top: 10px;
+    }
+  }
+}

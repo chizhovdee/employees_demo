@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import EmployeesListPage from '../components/EmployeesListPage'
 import EmployeeInfoPage from '../components/EmployeeInfoPage'
+import '../../stylesheets/Page.scss'
 
 const PageWrapper = ({pageName, pageData})=> {
   let page;

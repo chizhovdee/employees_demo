@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import EmployeeRow from './EmployeeRow'
+import '../../stylesheets/EmployeesList.scss'
 
 const EmployeesList = ({employees, showEmployeeInfo})=> (
   <table className="employees-list">
